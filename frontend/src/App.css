@@ -1,42 +1,70 @@
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: radial-gradient(circle at 50% 0%, #2b2833 0%, #110f16 100%) !important;
+    background-attachment: fixed !important;
+    background-color: #110f16 !important; 
+
+    color: white !important;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.navbar {
+    background-color: rgba(20, 18, 24, 0.6) !important; 
+    backdrop-filter: blur(15px) !important; 
+    -webkit-backdrop-filter: blur(15px) !important;
+    
+    /* Borde sutil con un toque lila muy suave */
+    border-bottom: 1px solid rgba(192, 132, 252, 0.15) !important; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4) !important;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #15131a;
+}
+::-webkit-scrollbar-thumb {
+    background: #3a3644; /* Gris morado */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #C084FC;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+/* Conservamos tu botón de Volver Arriba porque ahora resalta más */
+.gv-back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 55px !important;
+    height: 55px !important;
+    background-color: #C084FC !important;
+    color: #000 !important;
+    border: none !important;
+    border-radius: 50% !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    z-index: 9999;
+    box-shadow: 0 0 20px rgba(192, 132, 252, 0.4);
+    cursor: pointer;
+    transition: all 0.3s ease;
 }

@@ -1,0 +1,53 @@
+/* Color de texto mejorado para legibilidad */
+.gv-box-text {
+    color: #e0e0e0 !important;
+    font-size: 1.05rem;
+}
+
+.gv-no-reviews {
+    color: #888 !important;
+    font-style: italic;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+/* Estilos de hilos en reseñas de manga */
+.gv-review-replies {
+    padding-left: 20px;
+    border-left: 2px solid #33333b;
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+.gv-reply-avatar-mini {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #c084fc;
+}
+
+.gv-comment-item-simple {
+    padding: 15px 0;
+    border-bottom: 1px solid #2a2a32;
+    display: flex;
+    gap: 15px;
+}
+
+.gv-comment-avatar-mini {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+.btn-manage-secondary {
+    border-color: #c084fc !important;
+    color: #c084fc !important;
+}
+
+.btn-manage-secondary:hover {
+    background-color: rgba(192, 132, 252, 0.1);
+    color: #d8b4fe !important;
+}

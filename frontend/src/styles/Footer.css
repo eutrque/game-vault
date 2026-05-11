@@ -1,0 +1,76 @@
+/* =============================================
+   GAMEVAULT - FOOTER INTEGRADO Y PRO
+   ============================================= */
+
+.gv-footer {
+    /* Usamos el mismo color oscuro de tu App para que no haya corte visual */
+    background-color: #0b0b0d; 
+    border-top: 1px solid #1a1a1e;
+    padding: 40px 0 25px 0;
+    margin-top: 100px;
+}
+
+.footer-brand {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: white;
+}
+
+.footer-brand span span {
+    color: #c084fc;
+}
+
+/* LA FRASE DEBAJO DEL LOGO */
+.footer-tagline {
+    color: #94a3b8; /* Gris azulado suave */
+    font-size: 0.9rem;
+    line-height: 1.4;
+    font-weight: 500;
+    margin: 0;
+}
+
+.footer-nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .footer-nav-links { justify-content: flex-end; }
+}
+
+/* ENLACES MORADOS VIBRANTES */
+.footer-link {
+    color: #c084fc !important;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 700;
+    transition: all 0.2s ease;
+}
+
+.footer-link i {
+    font-size: 1.1rem;
+    color: #c084fc;
+}
+
+.footer-link:hover {
+    color: #ffffff !important;
+    transform: translateY(-2px);
+}
+
+.footer-separator {
+    color: #2a2a32;
+    margin: 0 5px;
+}
+
+.footer-divider {
+    border-color: #2a2a32;
+    margin: 30px 0 20px 0;
+    opacity: 0.5;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    color: #4b5563;
+}

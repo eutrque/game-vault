@@ -1,0 +1,79 @@
+
+.gv-privacy-section {
+    background: transparent !important; 
+    min-height: 80vh;
+}
+
+.gv-privacy-main-title {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 2.8rem;
+    letter-spacing: -1px;
+}
+
+.text-purple {
+    color: #c084fc;
+}
+
+.gv-privacy-update {
+    color: #c084fc;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+    opacity: 0.7;
+}
+
+
+.gv-privacy-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+.gv-privacy-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+
+.gv-privacy-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(192, 132, 252, 0.1);
+    border: 1px solid rgba(192, 132, 252, 0.3);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c084fc;
+    font-size: 1.4rem;
+    flex-shrink: 0;
+}
+
+.gv-privacy-text h4 {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+
+.gv-privacy-text p {
+    color: #cbd5e1 !important; 
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .gv-privacy-item {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        align-items: center;
+    }
+}

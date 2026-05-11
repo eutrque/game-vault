@@ -1,0 +1,157 @@
+/* =============================================
+   GAMEVAULT - CONTACTO "SAAS MODERNO"
+   ============================================= */
+
+.gv-contact-wrapper {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.gv-contact-title {
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 3.5rem;
+    letter-spacing: -1.5px;
+}
+
+.gv-contact-subtitle {
+    color: #94a3b8;
+    font-size: 1.15rem;
+    line-height: 1.6;
+}
+
+/* ESTILOS DE LA INFORMACIÓN (Lado Izquierdo) */
+.gv-info-item {
+    transition: transform 0.3s ease;
+}
+
+.gv-info-item:hover {
+    transform: translateX(10px);
+}
+
+.gv-info-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(192, 132, 252, 0.1);
+    border: 1px solid rgba(192, 132, 252, 0.3);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #c084fc;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    transition: all 0.3s ease;
+}
+
+.gv-info-item:hover .gv-info-icon {
+    background: #c084fc;
+    color: #000;
+}
+
+.gv-contact-link {
+    color: #c084fc !important;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 800;
+    transition: opacity 0.2s;
+}
+
+.gv-contact-link:hover {
+    opacity: 0.8;
+}
+
+.gv-text-light {
+    color: #64748b;
+    font-size: 0.95rem;
+}
+
+.gv-contact-address {
+    color: #94a3b8;
+    font-style: normal;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+/* =============================================
+   ESTILOS DEL FORMULARIO (Lado Derecho)
+   ============================================= */
+
+.gv-contact-form-container {
+    background-color: rgba(22, 22, 26, 0.8) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid #2a2a32 !important;
+    border-radius: 24px;
+    padding: 45px 40px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Pequeño resplandor morado decorativo en el fondo del formulario */
+.gv-contact-form-container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(192, 132, 252, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.gv-contact-form-container > * {
+    position: relative;
+    z-index: 1;
+}
+
+.gv-form-label-contact {
+    color: #cbd5e1 !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 8px;
+}
+
+.gv-input-contact {
+    background-color: #0f0f13 !important;
+    border: 1px solid #2a2a32 !important;
+    color: #ffffff !important;
+    padding: 15px 18px !important;
+    border-radius: 12px !important;
+    font-size: 0.95rem !important;
+    transition: all 0.3s ease;
+}
+
+.gv-input-contact:focus {
+    border-color: #c084fc !important;
+    box-shadow: 0 0 0 0.2rem rgba(192, 132, 252, 0.15) !important;
+    outline: none !important;
+    background-color: #1a1a20 !important;
+}
+
+.gv-input-contact::placeholder {
+    color: #475569 !important;
+}
+
+.gv-btn-submit-contact {
+    background-color: #c084fc !important;
+    color: #000000 !important;
+    font-weight: 800 !important;
+    border: none !important;
+    padding: 16px !important;
+    border-radius: 12px !important;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.gv-btn-submit-contact:hover {
+    background-color: #d8b4fe !important;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(192, 132, 252, 0.25);
+}

@@ -1,0 +1,151 @@
+
+.gv-ai-section {
+    background-color: #1a1a24;
+    border: 1px solid rgba(168, 85, 247, 0.1);
+}
+
+.gv-ai-glow {
+    box-shadow: 0 0 25px rgba(168, 85, 247, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.gv-ai-glow:hover {
+    box-shadow: 0 0 35px rgba(168, 85, 247, 0.2);
+}
+
+.gv-ai-search-box {
+    max-width: 700px;
+}
+
+.gv-ai-input {
+    background-color: #0d0d12 !important;
+    border: 1px solid #333 !important;
+    color: white !important;
+    box-shadow: none !important;
+}
+
+
+.gv-ai-input::placeholder {
+    color: #c084fc !important;
+    opacity: 0.5 !important;
+}
+
+.gv-ai-btn {
+    background-color: #a855f7 !important;
+    border: none !important;
+    color: white !important;
+    padding: 8px 25px !important;
+}
+
+
+.gv-pill {
+    background: transparent;
+    border: 1px solid #333;
+    color: #888;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.gv-pill:hover {
+    border-color: #a855f7;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.gv-pill.active {
+    background-color: #a855f7;
+    border-color: #a855f7;
+    color: white;
+    box-shadow: 0 4px 12px rgba(168, 85, 247, 0.4);
+}
+
+
+.gv-manga-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.gv-manga-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6) !important;
+}
+
+
+.gv-card-img-container {
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+}
+
+.gv-manga-img {
+    transition: transform 0.6s cubic-bezier(0.33, 1, 0.68, 1);
+}
+
+.gv-manga-card:hover .gv-manga-img {
+    transform: scale(1.1); 
+}
+
+.gv-author-link {
+    color: #a0a0a0;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.gv-author-link:hover {
+    color: #a855f7;
+    text-decoration: underline;
+}
+
+
+.gv-btn-outline-purple {
+    border: 2px solid #a855f7 !important;
+    color: #a855f7 !important;
+    background: transparent !important;
+    font-weight: bold !important;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    transition: all 0.3s ease !important;
+}
+
+.gv-btn-outline-purple:hover {
+    background-color: #a855f7 !important;
+    color: white !important;
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.5);
+}
+
+
+.gv-filter-label-header {
+    color: rgba(255, 255, 255, 0.85) !important; 
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 2px; 
+    font-weight: 800;
+    margin-bottom: 20px;
+    display: block; 
+}
+
+
+.gv-pill-container {
+    margin-top: 10px;
+}
+
+
+.gv-filter-label-header {
+    color: #ffffff !important; 
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    display: block;
+    opacity: 1; 
+}
+
+
+.gv-btn-outline-purple {
+    text-transform: none !important; 
+    font-weight: 600 !important;
+}
