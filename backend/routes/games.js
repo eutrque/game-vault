@@ -4,10 +4,12 @@ const db = require('../db');
 const multer = require('multer');
 const path = require('path');
 
+// Rutas principales de la API para la gestión de juegos en GameVault
+
 // Configuración de Multer para guardar las portadas de los juegos
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, 'images/games/'); // Carpeta donde se guardan las fotos de los juegos
+        cb(null, 'images/games/'); 
     },
     filename: (req, file, cb) => {
         // Nombre cifrado para evitar sobreescribir archivos con el mismo nombre
@@ -19,6 +21,7 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage: storage });
 
+// Filtrado de juegos
 router.get('/', async (req, res) => {
     const { search, genreid, minRating, maxRating, year, sort } = req.query;
     

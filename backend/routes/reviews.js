@@ -7,7 +7,6 @@ router.get('/game/:id', async (req, res) => {
     try {
         const gameId = req.params.id;
         
-        // MODIFICADO: Ahora apunta a Game_Reviews
         const [rows] = await db.query(`
             SELECT r.id, r.user_id, r.title, r.content, r.rating, r.publish_date, r.update_date, u.nickname, u.avatar_img 
             FROM Game_Reviews r

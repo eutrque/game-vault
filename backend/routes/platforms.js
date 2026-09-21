@@ -9,7 +9,6 @@ router.get('/', async (req, res) => {
         const sql = 'SELECT id, name FROM Platforms ORDER BY name ASC';
         const [rows] = await db.query(sql);
         
-        // Devolvemos el array de plataformas en formato JSON
         res.json(rows);
     } catch (err) {
         console.error("Error al obtener la lista de plataformas:", err);
